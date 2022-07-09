@@ -8,3 +8,4 @@ headers = {
 response = requests.get(url,headers=headers)
 response.encoding=response.apparent_encoding
 print(response.text)
+
