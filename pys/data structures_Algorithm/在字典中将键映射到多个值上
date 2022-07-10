@@ -1,0 +1,27 @@
+#一键多值字典
+d={
+    'a':[1,2,3],
+    'b':[4,5]
+}
+e={#集合
+    'a':{1,2,3},
+    'b':{4,5}
+}
+print(d,e)
+#2.collections.defaultdict
+from collections import defaultdict
+d=defaultdict(list)
+print(d)#会自动创建字典表
+d['a'].append(1)
+print(d)
+d=defaultdict(set)
+print(d)
+d['a'].add(1)
+print(d)
+d['a'].add(2)
+print(d)
+asd={}
+asd.setdefault('a',[]).append(1)
+print(asd)
+asd.setdefault('a').append(2)
+print(asd)
