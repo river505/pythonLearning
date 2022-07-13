@@ -1,0 +1,16 @@
+import tkinter as tk
+window=tk.Tk()
+window.title('index')
+window.geometry('200x200')
+l=tk.Label(window,bg='green',width=20,height=3)
+l.pack()
+var=tk.StringVar()
+def asd():
+    l.config(text='you have selected '+var.get())
+r1=tk.Radiobutton(window,text='option A',variable=var,value='A',command=asd)
+r2=tk.Radiobutton(window,text='option B',variable=var,value='B',command=asd)
+r3=tk.Radiobutton(window,text='option C',variable=var,value='C',command=asd)
+r1.pack()
+r2.pack()
+r3.pack()
+window.mainloop()
