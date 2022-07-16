@@ -1,0 +1,10 @@
+MPG 每加仑燃油所行英里数，英里每加仑
+mpg - > 燃油效率
+cylinders -> 气缸
+displacement - > 排量
+horsepower - > 马力
+weight - > 重量
+acceleration - > 加速度
+model year - > 型号年份
+origin -> 编号
+car name - > 名称

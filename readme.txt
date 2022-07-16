@@ -18,3 +18,6 @@ tkinter文件夹下知识图谱机器人图形界面程序
 
 2022.7.15新建上传numpy、pytorch文件夹
 根目录增加numpy思维导图
+
+7.16新建machine learing 文件夹 
+上传第一个机器学习联系案例MPG
