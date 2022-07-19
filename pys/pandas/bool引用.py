@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 #整体上有四个索引：行、列的位置索引（0，1，2，…）、行的标签索引（index）、列标签（columns）
 asd=np.array(range(15)).reshape(3,5)
-df = pd.DataFrame(asd,index=['小李','小王','小张'],columns=['a','b','c','d',7] )
+df = pd.DataFrame(asd,index=['小李','小王','小张'],columns=['小张','b','c','d',7] )
 #方括号：列标签、只能使用位置索引的多行不限列索引 禁止使用行标签索引和单独的行位置索引
 #print(df[1]) # 1 报错
 print(df[1:10]) # 2 多行引用
@@ -22,8 +22,8 @@ print(df[['b','c']]) # 6多列引用
 #print(df.loc['1']) #10想要尝试行引用 报错
 #print(df.loc['b']) #11想要单列引用 报错
 #print(df.loc[['b','c']]) #12想要多列引用 报错
-print(df.loc['小张']) # 13行引用
-print(df.loc[:,'a']) #14列引用
+print('检查',df.loc['小张']) # 13行引用 行列同名 因无逗号行在前
+print(df.loc[:,'b']) #14列引用
 print(df.loc['小张','c']) #15单元素引用
 print(df.loc['小王',7]) #16单元素引用 前行后列
 print(df.loc['小李':'小张'])#17多行引用、切片、包含结束索引

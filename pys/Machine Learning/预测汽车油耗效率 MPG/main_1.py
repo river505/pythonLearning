@@ -34,7 +34,9 @@ ax4.scatter(base['acceleration'],base['mpg'],alpha=0.5)
 ax4.set_title('acceleration')
 ax5.scatter([float(x) for x in base['horsepower'].tolist()],base['mpg'],alpha=0.5)
 ax5.set_title('horsepower')
+
 plt.tight_layout(pad=3)
+
 # plt.show()
 
 from sklearn.model_selection import train_test_split
