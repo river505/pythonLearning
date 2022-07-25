@@ -1,4 +1,4 @@
-
+from fake_useragent import UserAgent
 import requests
 import os
 import time
