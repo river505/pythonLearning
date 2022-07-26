@@ -71,7 +71,7 @@ twilight_shifted_r, viridis, viridis_r, vlag, vlag_r, winter, winter_r
 #相关性排序
 sort00=data.corr()['MEDV'].sort_values()
 # print(sort00)
-# hue：根据hue指定的字段的值区分颜色，palette：配色方案
+# hue：根据hue指定的字段的值区分颜色，palette：配色方案 和参数c类似
 # sns.pairplot(data[["LSTAT","RM","PIRATIO","MEDV"]],diag_kind='hist',hue="MEDV",palette='husl')
 # sns.pairplot(data[["LSTAT","RM","PIRATIO","MEDV"]])
 # plt.show()
